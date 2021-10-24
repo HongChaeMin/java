@@ -1,0 +1,11 @@
+package threadEx01;
+
+public class ThreadEx01 {
+	public static void main(String[] args) {
+		
+		ThreadExtends te1  = new ThreadExtends("¡Ú");
+		ThreadExtends te2 = new ThreadExtends("¡Ü");
+		te1.run();
+		te2.run();
+	}
+}

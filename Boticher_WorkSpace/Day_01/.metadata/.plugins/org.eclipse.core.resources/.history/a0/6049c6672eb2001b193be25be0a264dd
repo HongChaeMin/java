@@ -1,0 +1,19 @@
+package map_quizz01;
+
+public class Goods {
+
+	private String item;
+	private int price;
+	private String state;
+	
+	public Goods(String item, int price, String state) {
+		this.item = item;
+		this.price = price;
+		this.state = state;
+	}
+	
+	public String getItem() {
+		return item;
+	}
+	
+}

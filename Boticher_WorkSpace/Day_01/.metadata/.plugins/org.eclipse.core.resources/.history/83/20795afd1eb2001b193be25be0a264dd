@@ -1,0 +1,10 @@
+package thread_quiz01;
+
+public class Cow implements Durk{
+
+	@Override
+	public void cry() {
+		System.out.println("음메에에에");		
+	}
+
+}

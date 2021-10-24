@@ -1,0 +1,16 @@
+package fileio_ex;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class Ex02 {
+
+	public static void main(String[] args) throws IOException {
+		
+		// 파일 읽기
+		FileInputStream fis = new FileInputStream("output.txt");
+		
+
+	}
+
+}

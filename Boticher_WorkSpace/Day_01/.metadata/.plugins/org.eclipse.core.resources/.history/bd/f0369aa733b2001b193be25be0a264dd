@@ -1,0 +1,27 @@
+package map_quizz01;
+
+import java.util.Scanner;
+
+public class MarketTest {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		boolean check = true;
+		
+		Market market = new Market();
+		
+		while (check) {
+			System.out.println("1. 등록\t 2. 보기\t3. 수정\t4. 삭제\t5. 종료");
+			switch(sc.nextInt()) {
+			case 1:
+				System.out.println("이름, 가격, 판매상태를 입력해주세요");
+				market.create(sc.next(), sc.nextInt(), sc.next());
+				break;
+			}
+		}
+		
+	}
+
+}

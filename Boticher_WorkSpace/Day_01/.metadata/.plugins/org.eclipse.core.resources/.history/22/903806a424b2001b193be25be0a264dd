@@ -1,0 +1,14 @@
+package fileio_ex;
+
+import java.io.FileOutputStream;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		
+		// 파일 쓰기
+		FileOutputStream fos = new FileOutputStream("output.txt", false);
+
+	}
+
+}

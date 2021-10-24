@@ -1,0 +1,18 @@
+package threadEx01;
+
+public class ThreadEx01 {
+	public static void main(String[] args) {
+		
+		ThreadExtends te1  = new ThreadExtends("★");
+		ThreadExtends te2 = new ThreadExtends("●");
+		
+		// Single Threaad : 순차적 수행
+		//te1.run();
+		//te2.run();
+		
+		// Multi Thread : 동시에 수행
+		te1.start();
+		te2.start();
+		System.out.println("==========수행완료=========");
+	}
+}

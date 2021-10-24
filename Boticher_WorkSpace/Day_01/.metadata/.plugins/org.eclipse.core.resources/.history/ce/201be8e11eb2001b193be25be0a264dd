@@ -1,0 +1,7 @@
+package thread_quiz01;
+
+public interface Durk {
+
+	void cry();
+	
+}

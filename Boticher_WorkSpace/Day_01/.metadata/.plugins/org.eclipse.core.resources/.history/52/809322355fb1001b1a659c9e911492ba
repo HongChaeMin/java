@@ -1,0 +1,39 @@
+package map_quiz;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Quiz07 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+
+		List<Person> list = new ArrayList<>();
+		
+		boolean check = true;
+		
+		while (check) {
+			System.out.println("1.입력 2.출력 3.삭제 4.종료");
+			switch (sc.nextInt()){
+			case 1: 
+				System.out.print("이름 : ");
+				String name = sc.next();
+				System.out.println("생년월일 (yyyyddmm) : ");
+				int brith = sc.nextInt();
+				list.add(new Person(name, brith));
+				System.out.println("성공하였습니다");
+				break;
+			case 2: 
+				if(list == null) {
+					System.out.println("비어있습니다");
+					break;
+				}
+				System.out.println(list);
+			}
+		}
+		
+	}
+
+}

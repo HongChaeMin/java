@@ -1,0 +1,13 @@
+package map_quizz01;
+
+import java.util.Scanner;
+
+public class MarketTest {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+	}
+
+}

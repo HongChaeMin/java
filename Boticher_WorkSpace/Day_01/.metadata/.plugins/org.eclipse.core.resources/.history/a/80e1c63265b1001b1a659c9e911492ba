@@ -1,0 +1,17 @@
+package jenerics;
+
+public class GenericTest {
+
+	public static void main(String[] args) {
+		
+		Generics<String> str = new Generics<>();
+		str.setT("È«Ã¤¹Î");
+		System.out.println(str.getT());
+
+		Generics<Integer> in = new Generics<>();
+		str.setT(3);
+		
+		
+	}
+
+}

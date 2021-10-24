@@ -1,0 +1,10 @@
+package threadEx01;
+
+public class ThreadImplements implements Runnable{
+
+	@Override
+	public void run() {
+		
+	}
+
+}

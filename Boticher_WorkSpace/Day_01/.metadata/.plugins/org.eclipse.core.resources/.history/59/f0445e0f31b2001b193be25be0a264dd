@@ -1,0 +1,20 @@
+package exception_ex;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		
+		// 에외처리 : 예상치 못한 상황에 대한 처리를 하는 것
+		// try - catch - finally
+		
+		//NPE
+		try {
+			String str = null;
+			System.out.println(str.isEmpty());
+		} catch(NullPointerException e) {
+			System.out.println("삐삡");
+		}
+
+	}
+
+}

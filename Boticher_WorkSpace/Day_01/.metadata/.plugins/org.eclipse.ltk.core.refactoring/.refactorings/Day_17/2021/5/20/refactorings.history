@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;charaters&apos; in &apos;map_quiz.Quiz05.main(...)&apos; to &apos;characters&apos;&#x0D;&#x0A;- Original project: &apos;Day_17&apos;&#x0D;&#x0A;- Original element: &apos;map_quiz.Quiz05.main(String[]).charaters&apos;&#x0D;&#x0A;- Renamed element: &apos;charaters&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;charaters&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;map_quiz{Quiz05.java[Quiz05~main~\[QString;@charaters!535!590!561!569!QList\&lt;QMap\&lt;QString;QString;&gt;;&gt;;!0!false" name="characters" references="true" stamp="1620627748305" version="1.0"/>
+</session>

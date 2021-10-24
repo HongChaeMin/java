@@ -1,0 +1,10 @@
+package thread_quiz01;
+
+public class Tiger implements Durk{
+
+	@Override
+	public void cry() {
+		
+	}
+
+}

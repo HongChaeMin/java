@@ -1,0 +1,65 @@
+package map_quizz01;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Market {
+
+	private List<Goods> list = new ArrayList<>();
+
+	public void create(String name, int price, String state) {
+		if (state.equals("판매 중") || state.equals("판매 완료") || state.equals("예약 중")) {
+			for (Goods protacted : this.list) {
+				if (name.equals(protacted.getItem())) {
+					System.out.println("등록된 상품이 존재합니다");
+					return;
+				}
+			}
+			this.list.add(new Goods(name, price, state));
+			System.out.println("등록되었습니다");
+		} else {
+			System.out.println("판매 상태가 유효하지 않습니다");
+		}
+	}
+
+	public void read(String item) {
+		if (this.list.isEmpty()) {
+			System.out.println("비어있습니다");
+			return;
+		}
+		for (Goods protacted : this.list) {
+			if (item.equals(protacted.getItem())) {
+				protacted.disp();
+			}
+		}
+	}
+
+	public void update(String item, int price) {
+		if (this.list.isEmpty()) {
+			System.out.println("수정할 상품이 존재하지 않습니다");
+			return;
+		} else {
+			for(Goods protacted : this.list) {
+				if(protacted.getItem().equals(item)) {
+					protacted.setPrice(price);
+					System.out.println("수정 되었습니다");
+					break;
+				}
+			}
+		}
+	}
+
+	public void update(String item, String state) {
+		if (this.list.isEmpty()) {
+			System.out.println("수정할 상품이 존재하지 않습니다");
+		}
+		
+		boolean check = true;
+		
+		for(Goods protacted : this.list) {
+			if(protacted.getItem().)
+		}
+
+	}
+
+}

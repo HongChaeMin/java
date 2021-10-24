@@ -1,0 +1,33 @@
+package map_quizz01;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Market {
+
+	private List<Goods> list = new ArrayList<>();
+
+	public void create(String name, int price, String state) {
+		if (state.equals("판매 중") || state.equals("판매 완료") || state.equals("예약 중")) {
+			for (Goods protacted : this.list) {
+				if (name.equals(protacted.getItem())) {
+					System.out.println("등록된 상품이 존재합니다");
+					return;
+				}
+			}
+			this.list.add(new Goods(name, price, state));
+			System.out.println("등록되었습니다");
+		} else {
+			System.out.println("판매 상태가 유효하지 않습니다");
+		}
+	}
+
+	public void update(String item) {
+		for(Goods protacted : this.list) {
+			if(item.equals(protacted.getItem())) {
+				
+			}
+		}
+	}
+
+}

@@ -1,0 +1,12 @@
+package thread_quiz01;
+
+public class Tiger implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}

@@ -1,0 +1,37 @@
+package map_quizz01;
+
+public class Goods {
+
+	private String item;
+	private int price;
+	private String state;
+	
+	public Goods(Goods go) {
+		if (go.state.equals("판매 중") || go.state.equals("판매 완료") || go.state.equals("예약 중")) {
+			System.out.println("등록되었습니다");
+			this.item = go.item;
+			this.price = go.price;
+			this.state = go.state;
+		} else {
+			System.out.println("판매 상태가 유효하지 않습니다");
+			break;
+		}
+	}
+	
+	public String getItem() {
+		return item;
+	}
+	
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public void disp() {
+		System.out.println("물품명 : " + this.item + ", 가격 : " + this.price + ", 판매상태 : " + this.state);
+	}
+	
+}

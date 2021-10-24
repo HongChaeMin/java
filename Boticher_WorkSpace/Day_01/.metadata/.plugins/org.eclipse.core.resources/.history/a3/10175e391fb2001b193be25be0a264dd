@@ -1,0 +1,10 @@
+package threadEx01;
+
+public class ThreadImplements implements Runnable{
+
+	@Override
+	public void run() {
+		 // 여기서 구현하는 내용이 쓰레드에서 수행된다
+	}
+
+}

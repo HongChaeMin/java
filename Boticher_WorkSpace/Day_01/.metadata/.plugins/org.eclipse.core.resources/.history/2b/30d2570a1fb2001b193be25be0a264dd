@@ -1,0 +1,10 @@
+package thread_quiz01;
+
+public class Pony implements Durk {
+
+	@Override
+	public void cry() {
+		System.out.println("È÷¤ÓÀÌÀÌÀ×");
+	}
+
+}

@@ -1,0 +1,26 @@
+package map_quiz;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Quiz06 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		List<String> list = new ArrayList<>();
+
+		boolean check = true;
+
+		while (check) {
+			System.out.println("1. 입력\t 2. 출력\t 3. 삭제\t 4. 종료");
+			switch (sc.nextInt()) {
+			case 1:
+
+			}
+		}
+
+	}
+
+}

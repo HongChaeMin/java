@@ -1,0 +1,17 @@
+package map_quizz01;
+
+import java.util.ArrayList;
+
+public class MarketTest {
+
+	public static void main(String[] args) {
+		
+		private list<Goods> list new ArrayList<>();
+		
+		public void create(String name, int price, String state) {
+			
+		}
+
+	}
+
+}

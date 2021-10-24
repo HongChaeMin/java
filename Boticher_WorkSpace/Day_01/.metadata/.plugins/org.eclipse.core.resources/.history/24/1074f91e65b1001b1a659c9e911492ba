@@ -1,0 +1,15 @@
+package jenerics;
+
+public class Generics<T>{
+
+	private T t;
+
+	public T getT() {
+		return t;
+	}
+	
+	public void disp() {
+		System.out.println(this.t);
+	}
+	
+}

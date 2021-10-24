@@ -1,0 +1,26 @@
+package jenerics;
+
+public class GenericTest {
+
+	public static void main(String[] args) {
+		
+		Generics<String> str = new Generics<>();
+		str.setT("È«Ã¤¹Î");
+		System.out.println(str.getT());
+
+		Generics<Integer> in = new Generics<>();
+		in.setT(19);
+		System.out.println(in.getT());
+		
+		GenericsPerson<String, Integer> p1 = new GenericsPerson<>("È«Ã¤¹Î", 19);
+		GenericsPerson<Integer, String> p2 = new GenericsPerson<>(19, "È«Ã¤¹Î");
+				
+		disp(p1);
+		
+	}
+	
+	public static <T, V> void disp(GenericsPerson<T, V> p) {
+		System.out.println(p.getName() + " " + p.getAge());
+	}
+	
+}
